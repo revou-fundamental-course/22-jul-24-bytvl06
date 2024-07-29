@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            display: flex;
+            gap: 30px;
+            width: 100%;
+        }
+
+        .left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .author img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .author .name {
+            font-weight: bold;
+        }
+
+        .author .details {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .benefit {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .benefit-number {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+
+        .benefit-text {
+            color: #333;
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            appearance: none;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .small-text {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Trusted Travel Agent's</h1>
+        <p>Your happiness is our happiness</p>
+        <div class="content">
+            <div class="left">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/200" alt="Image">
+                </div>
+                <p class="quote">"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+                <div class="author">
+                    <img src="https://via.placeholder.com/30" alt="Author Image">
+                    <div>
+                        <span class="name">Florence Hughes</span>
+                        <span class="details">ibu Rumah Tangga, 28</span>
+                    </div>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <div class="benefit-number">1</div>
+                        <div class="benefit-text">Your first feature, written in the form of a benefit statement.</div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-number">2</div>
+                        <div class="benefit-text">Your second feature, written in the form of a benefit statement.</div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-number">3</div>
+                        <div class="benefit-text">Your third feature written, in the form of a benefit statement.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <p class="small-text">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                <form>
+                    <input type="text" placeholder="First and last name" required>
+                    <input type="email" placeholder="example@email.com" required>
+                    <select>
+                        <option value="option1">Select option</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
